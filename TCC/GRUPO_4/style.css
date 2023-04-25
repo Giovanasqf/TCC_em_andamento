@@ -36,6 +36,7 @@
     background:  no-repeat center center;
     background-size: cover;
     height: 10vh;
+    margin-top: 10%;
   }
   
   .nav-list {
@@ -133,13 +134,16 @@
 label {
     position: relative;
     display: block;
-    color: white;
-    background-color: #3b6978;
+    color: rgb(8, 8, 8);
+    background-color:#E6E6FA;
     padding: 10px;
     font-size: 25px;
     text-align: center;
     user-select: none;
-    cursor: pointer;
+  
+    height: 50px;
+    width: 700px;
+   
    
 }
 
@@ -150,39 +154,38 @@ label {
     list-style: none;
     max-height: 0em;
     transition: max-height 0.3s;
-    border-bottom: 4px solid #172f3b;
+    border-bottom: 4px solid #908ac4;
+    height: 50px;
+    width: 700px;
+
    
 
 }
 
 .options > a {
-    background-color: #cae8d5;
+    background-color: #908ac4;
     display: block;
     padding: 15px;
     font-size: 20px;
     user-select: none;
-    cursor: pointer;
+ 
 }
 
-label:hover {
-    background-color: #204051;
-}
-
-.options > a:hover {
-    background-color: #84a9ac;
-}
 
 input {
     display: none;
 }
 
 input:checked ~ .options {
-    max-height: 10em;
-    transition: max-height 0.3s;
+  max-height: 10em;
+  transition: max-height 0.3s;
+  
 }
   
 
-
+nav.options {
+  text-align: center;
+}
 
 
 
@@ -201,8 +204,6 @@ main.cards {
   align-items: center;
   
   }
-  
-  
   
   
   main.cards section.card {
@@ -227,15 +228,13 @@ main.cards {
  
   }
   
-  
-  
+
   
   main.cards section.card:first-child {
   
    margin-left: 0;
   
   }
-  
   
   
   
@@ -255,7 +254,6 @@ main.cards {
  width: 100%;
   
   }
-  
   
   
   
@@ -290,25 +288,7 @@ main.cards {
   
   
   
-  
-  
-  
-  
-  main.cards section.card.shop button {
-  
-  background: linear-gradient(to right, #3E8AFF, #BBDEFF);
-  
-  }
-  
-  main.cards section.card.about button {
-  
- background: linear-gradient(to right, #FE5F8F, #FFC7D9);
-  
-  }
-  
-  
-  
-  
+
   
   main.cards section.card.shop {
   
@@ -318,7 +298,7 @@ main.cards {
   
   main.cards section.card.about {
   
-  box-shadow: 40px 20px 50px -15px #FFC1D5;
+  box-shadow: 40px 20px 50px -15px #AFD6FF;
   
   }
   
@@ -335,31 +315,7 @@ main.cards {
   
   
   
-  
-  main.cards section.card {
-
-  margin-left: 0;
-
-  margin-bottom: 32px;
   }
-
   
   
-  
-   main.cards section.card:last-child {
-
-   margin-bottom: 0;
-
-   }
-  
-  
-  
-  
-  main.cards section.card button {
-  font-size:70%;
-   }
-  
-  
-  
-  
-  }
+ 
