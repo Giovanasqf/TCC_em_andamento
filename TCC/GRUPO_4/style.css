@@ -134,12 +134,13 @@ label {
     position: relative;
     display: block;
     color: white;
-    background-color: #5f73e4;
+    background-color: #3b6978;
     padding: 10px;
     font-size: 25px;
     text-align: center;
     user-select: none;
     cursor: pointer;
+   
 }
 
 .options {
@@ -148,12 +149,14 @@ label {
     padding: 0px;
     list-style: none;
     max-height: 0em;
-    transition: max-height 0.5s;
-    border-bottom: 4px solid #5166da;
+    transition: max-height 0.3s;
+    border-bottom: 4px solid #172f3b;
+   
+
 }
 
 .options > a {
-    background-color: cornflowerblue;
+    background-color: #cae8d5;
     display: block;
     padding: 15px;
     font-size: 20px;
@@ -162,11 +165,11 @@ label {
 }
 
 label:hover {
-    background-color: #5d65a8;
+    background-color: #204051;
 }
 
 .options > a:hover {
-    background-color: #5166da;
+    background-color: #84a9ac;
 }
 
 input {
@@ -175,9 +178,188 @@ input {
 
 input:checked ~ .options {
     max-height: 10em;
-    transition: max-height 0.5s;
+    transition: max-height 0.3s;
 }
   
-.pergunta4{
+
+
+
+
+
+
+
+
+
+main.cards {
+
+  display: flex;
+
+  padding: 0;
+
+  justify-content: center;
+
+  align-items: center;
+  
+  }
+  
+  
+  
+  
+  main.cards section.card {
+  
+  display: flex;
+ 
+  flex-direction: column;
+ 
+  align-items: center;
+ 
   text-align: center;
-}
+ 
+  background: white;
+ 
+  padding: 1rem 1.5rem;
+ 
+  border-radius: 8px;
+ 
+  max-height: 800px;
+ 
+  margin-left: 60px;
+ 
+  }
+  
+  
+  
+  
+  main.cards section.card:first-child {
+  
+   margin-left: 0;
+  
+  }
+  
+  
+  
+  
+  main.cards section.card .icon {
+  
+   width: 200px;
+
+   height: 200px;
+
+  }
+  
+  
+  
+  
+  main.cards section.card img {
+  
+ width: 100%;
+  
+  }
+  
+  
+  
+  
+  main.cards section.card h3 {
+  
+   font-size: 100%;
+
+   margin: 16px 0;
+
+  }
+  
+  
+  
+  
+  main.cards section.card p {
+  
+   font-weight: 300;
+
+   max-width: 650px;
+
+   font-size: 25px;
+
+   margin-bottom: 20px;
+
+   line-height:30px;
+
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif'
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  main.cards section.card.shop button {
+  
+  background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+  
+  }
+  
+  main.cards section.card.about button {
+  
+ background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+  
+  }
+  
+  
+  
+  
+  
+  main.cards section.card.shop {
+  
+  box-shadow: 40px 20px 50px -15px #AFD6FF;
+  
+  }
+  
+  main.cards section.card.about {
+  
+  box-shadow: 40px 20px 50px -15px #FFC1D5;
+  
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 720px) {
+  
+  main.cards {
+  
+  flex-direction: column;
+  
+ }
+  
+  
+  
+  
+  main.cards section.card {
+
+  margin-left: 0;
+
+  margin-bottom: 32px;
+  }
+
+  
+  
+  
+   main.cards section.card:last-child {
+
+   margin-bottom: 0;
+
+   }
+  
+  
+  
+  
+  main.cards section.card button {
+  font-size:70%;
+   }
+  
+  
+  
+  
+  }
